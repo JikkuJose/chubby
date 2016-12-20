@@ -27,6 +27,14 @@ module Chubby
       data["it"]["title"]
     end
 
+    def updated_at
+      data["pd"]["up"]
+    end
+
+    def price
+      data["pd"]["price"]
+    end
+
     def url
       URI
         .unescape(data["it"]["url"])
